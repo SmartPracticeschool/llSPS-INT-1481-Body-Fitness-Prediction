@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="orange">
+<style>
+header {
+  background-color: #000000;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  }
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: inline-block;
+}
+</style>
+<header>
+<h2>Body Fitness Prediction</h2>
+</header>
+<body>
+<form action="http://localhost:5000/login" method="post">
+<p style="text-align:center;">step count</p>
+<p style="text-align:center;"><input placeholder="Enter values" type="text" name="sc"/></p>
+<p style="text-align:center;">calories burnt</p>
+<p style="text-align:center;"><input placeholder="Enter values" type="text" name="cb"/></p>
+<p style="text-align:center;">
+<label for="mood">choose your mood</label>
+<select name="a">
+<option value="neutral">neutral</option>
+<option value="sad">sad</option>
+<option value="happy">happy</option>
+</select></p>
+<p style="text-align:center;">hours of sleep</p>
+<p style="text-align:center;"><input placeholder="Enter a number" type="text" name="hs"/></p>
+<p style="text-align:center;">weight</p>
+<p style="text-align:center;"><input placeholder="Enter a number" type="text" name="w"/></p>
+<p style="text-align:center;"><input type="submit" class="button" value="submit"/></p>
+</form>
+<b>{{showcase}}</b>
+</body>
+</html>
